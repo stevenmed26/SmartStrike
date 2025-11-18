@@ -1,0 +1,40 @@
+camera_matrix:
+rows: 3
+cols: 3
+data: [
+1420.55, 0.00, 960.00,
+0.00, 1420.55, 540.00,
+0.00, 0.00, 1.00
+]
+
+distortion_coefficients:
+rows: 1
+cols: 5
+data: [ -0.1215, 0.0842, 0.00051, -0.00073, -0.0219 ]
+
+rectification_matrix:
+rows: 3
+cols: 3
+data: [
+1.00, 0.00, 0.00,
+0.00, 1.00, 0.00,
+0.00, 0.00, 1.00
+]
+
+projection_matrix:
+rows: 3
+cols: 4
+data: [
+1420.55, 0.00, 960.00, 0.00,
+0.00, 1420.55, 540.00, 0.00,
+0.00, 0.00, 1.00, 0.00
+]
+
+plate_detection:
+blur_kernel_size: 5
+canny_threshold1: 40
+canny_threshold2: 110
+hough_threshold: 50
+min_plate_area: 8000
+max_plate_area: 60000
+polygon_approx_epsilon: 8.0

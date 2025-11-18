@@ -1,0 +1,17 @@
+device_id: 0
+width: 1920
+height: 1080
+fps: 60
+buffer_size: 2
+fourcc: "MJPG"
+auto_exposure: false
+exposure: -6
+auto_white_balance: false
+white_balance_temperature: 4500
+focus_auto: false
+focus_value: 20
+
+pipeline:
+drop_frames_if_behind: true
+use_timestamp_sync: true
+max_frame_delay_ms: 50

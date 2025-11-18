@@ -1,0 +1,52 @@
+preprocessing:
+grayscale: true
+histogram_equalization: true
+gaussian_blur_kernel: 5
+denoise_strength: 3
+
+ball_detection:
+min_radius: 4
+max_radius: 22
+min_circularity: 0.65
+min_motion_speed: 1.2
+frame_skip_for_speed_calc: 2
+max_candidate_distance: 40
+morphological_open: 2
+morphological_close: 2
+hough_dp: 1.2
+hough_min_dist: 25
+hough_param1: 120
+hough_param2: 18
+
+tracking:
+max_history: 80
+min_trajectory_length: 4
+max_gap_frames: 6
+smoothing_enabled: true
+smoothing_factor: 0.75
+
+strike_zone:
+top_factor: 0.35
+bottom_factor: 0.15
+plate_width_inches: 17
+plate_point_depth_inches: 8.5
+zone_extension_inches: 5
+enforce_mlb_rules: true
+
+decision_engine:
+crossing_plane_distance_inches: 5
+min_confidence_trajectory: 0.75
+require_downward_motion: true
+min_frames_in_zone: 1
+
+visualization:
+draw_plate: true
+draw_zone: true
+draw_ball: true
+draw_trajectory: true
+draw_decision_text: true
+zone_color: [0, 128, 255]
+ball_color: [0, 255, 255]
+plate_color: [255, 255, 255]
+strike_color: [0, 255, 0]
+ball_color_text: [0, 0, 255]
